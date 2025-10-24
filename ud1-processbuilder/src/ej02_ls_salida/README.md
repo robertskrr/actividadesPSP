@@ -1,0 +1,1 @@
+El programa ejecuta "ls -l", lee stdout del proceso y se muestra por consola.
