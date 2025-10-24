@@ -1,6 +1,7 @@
 package ej02_ls_salida;
 
 import java.io.BufferedReader;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class Main {
@@ -11,20 +12,29 @@ public class Main {
 
 	private static void capturaLs() {
 		try {
-			ProcessBuilder pb = new ProcessBuilder("ls","-l");
-
+			ProcessBuilder pb = new ProcessBuilder("ls", "-l");
 			Process p = pb.start();
-			
-			BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
+
+			// FLUJO DE ENTRADA DE BYTE --> 0, 1
+			InputStream inputStream = p.getInputStream();
+			InputStreamReader lectorDeFlujo = new InputStreamReader(inputStream);
+			BufferedReader br = new BufferedReader(lectorDeFlujo);
+
 			String linea;
-			
+
 			while ((linea = br.readLine()) != null) {
 				System.out.println(linea);
 			}
+
+			int code = p.waitFor();
+
+			if (code == 0) {
+				System.out.println("Todo fue perfecto :)");
+			} else {
+				System.err.println("Error al ejecutar. :(");
+			}
 			
 			br.close();
-			p.waitFor();
-
 		} catch (Exception e) {
 			System.err.println(e.getMessage());
 		}
