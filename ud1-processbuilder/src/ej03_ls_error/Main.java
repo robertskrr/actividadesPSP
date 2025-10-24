@@ -12,7 +12,7 @@ public class Main {
 
 	private static void capturaError() {
 		try {
-			ProcessBuilder pb = new ProcessBuilder("ls", "-l", "/ruta/que/no/existe");
+			ProcessBuilder pb = new ProcessBuilder("ls", "/ruta/que/no/existe");
 			Process p = pb.start();
 
 			// FLUJO DE ENTRADA DE BYTE --> 0, 1
