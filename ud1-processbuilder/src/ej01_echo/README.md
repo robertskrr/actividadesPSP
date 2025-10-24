@@ -1,0 +1,1 @@
+El programa ejecuta echo con el mensaje "Hola UD1" y verifica que el proceso termina con el código 0.
