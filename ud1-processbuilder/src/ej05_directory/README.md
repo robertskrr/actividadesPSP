@@ -1,0 +1,1 @@
+El programa ejecuta "pwd" en un directorio distinto al actual, en este caso en "/tmp".
