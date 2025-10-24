@@ -11,7 +11,7 @@ public class Main {
 
 	private static void capturaLs() {
 		try {
-			ProcessBuilder pb = new ProcessBuilder("bash", "-lc", "ls -l");
+			ProcessBuilder pb = new ProcessBuilder("ls","-l");
 
 			Process p = pb.start();
 			
