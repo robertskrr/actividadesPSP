@@ -23,7 +23,7 @@ public class Main {
 			String linea;
 
 			while ((linea = br.readLine()) != null) {
-				System.out.println(linea);
+				System.err.println(linea);
 			}
 
 			int code = p.waitFor();
