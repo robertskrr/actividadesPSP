@@ -1,0 +1,1 @@
+El programa ejecuta "printenv MI_VAR", a la vez que crea la variable con environment(), muestra en consola el resultado creado.
