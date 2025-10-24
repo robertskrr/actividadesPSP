@@ -1,0 +1,1 @@
+package ej04_inherit_io;

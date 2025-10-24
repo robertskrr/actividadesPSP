@@ -1,0 +1,1 @@
+El programa ejecuta "top -b -n1" heredando la salida directamente a la terminal.
