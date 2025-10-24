@@ -1,0 +1,1 @@
+El programa ejecuta "ls -l" en una ruta que no existe, lee stderr del proceso y se muestra por consola.
