@@ -1,0 +1,1 @@
+El programa ejecuta "dmesg" y guarda la salida en "salida.txt" y los errores en "errores.txt"
