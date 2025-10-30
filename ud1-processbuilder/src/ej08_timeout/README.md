@@ -1,0 +1,1 @@
+El programa ejecuta "sleep 10" y si tarda más de 10 segundos (cosa que pasará) se finalizará.
