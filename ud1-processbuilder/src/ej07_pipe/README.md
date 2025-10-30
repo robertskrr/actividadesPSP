@@ -1,0 +1,1 @@
+El programa simula un "pipe" de dos procesos, conecta la salida del primero ("echo 'hola mundo'") con la entrada del segundo ("wc -w").
