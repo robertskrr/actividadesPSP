@@ -13,9 +13,12 @@ public class Main {
 			ProcessBuilder pb = new ProcessBuilder("bash", "-lc", "sleep 10");
 			Process p = pb.start();
 			
-			if (!p.waitFor(2, TimeUnit.SECONDS)) {
+			boolean terminado = p.waitFor(2, TimeUnit.SECONDS);
+			if (!terminado) {
 				p.destroy();
 				System.out.println("Ha tardado más de la cuenta...");
+			} else {
+				System.out.println("Finalizado correctamente");
 			}
 			
 		} catch (Exception e) {
