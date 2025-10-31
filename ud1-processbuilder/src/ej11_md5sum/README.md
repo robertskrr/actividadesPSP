@@ -1,0 +1,1 @@
+Programa que muestra el prompt md5txt>, lee líneas desde la entrada estándar y, para cada línea no vacía, ejecuta md5sum sobre ese texto y muestra el hash resultante (igual que echo hola | md5sum). La ejecución termina cuando se introduce una línea vacía.
