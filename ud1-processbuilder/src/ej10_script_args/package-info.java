@@ -1,0 +1,1 @@
+package ej10_script_args;
